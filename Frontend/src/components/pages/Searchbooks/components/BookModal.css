@@ -1,0 +1,452 @@
+.modal-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #414141a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-modal{
+    background-color: #101010;
+    padding: 20px;
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    display: flex;
+    align-items: baseline;
+}
+
+.book-infos{
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.information{
+    background-color: #202020;
+    border-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.information p{
+    font-size: 20px;
+}
+
+.information span{
+    font-weight: 200;
+}
+
+.indisponible-information{
+    background-color: rgb(78, 18, 18);
+    border-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.indisponible-information p{
+    font-size: 20px;
+}
+
+.indisponible-information span{
+    font-weight: 200;
+}
+
+.book-history{
+    display: flex;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+}
+
+.history-header{
+    background-color: #050505;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.history-list{
+    width: 100%;
+    height: 100%;
+}
+
+.history-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #202020;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.history-active-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #0d330a;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.late{
+    background-color: rgb(78, 18, 18);
+}
+
+.id, .client_name, .registryDate, .expected_return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.id, .client_name, .registryDate{
+    border-right: 1px solid white;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    background-color: #050505;
+    width: 300px;
+    border: 1px solid #050505;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buttons button:not(:disabled):hover{
+    background-color: white;
+    color: black;
+}
+
+.buttons button:disabled{
+    cursor: not-allowed;
+}
+
+.update-modal{
+    background-color: #2020209a;
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-area{
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.subtitle{
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.update-area input{
+    width: 300px;
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #A1A1A1;
+    padding-left: 10px;
+}
+
+.update-area button{
+    width: 300px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.update-button{
+    background-color: #202020;
+}
+
+.cancel-button{
+    background-color: rgb(78, 18, 18);
+}
+
+.update-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.cancel-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.loan-modal{
+    background-color: #2020209a;
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.loan-area{
+    background-color: #101010;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.loan-data{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.loan-data .title{
+    margin-bottom: 10px;
+}
+
+.loan-inputs{
+    display: flex;
+}
+
+.input-area input{
+    width: 300px;
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #A1A1A1;
+    padding-left: 10px;
+}
+
+.input-area button{
+    width: 300px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.input-area button:hover{
+    background-color: rgb(121, 121, 121);
+}
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.client-list{
+    margin-left: 20px;
+    background-color: #202020;
+    width: 400px;
+    height: 550px;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.list-item{
+    background-color: #101010;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    transition: 0.2s;
+    max-height: 100%;
+}
+
+.list-item:hover{
+    background-color: #181818;
+}
+
+.client-data{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.client-icon{
+    padding: 10px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.list-item.selected{
+    background-color: white;
+    color: #000000;
+}
+
+.selected{
+    color: #000000;
+}
+
+.list-item.selected .client-icon{
+    background-color: black;
+    color: white;
+}
+
+.list-item.selected .client-data{
+    color: black;
+}
+
+.icon-img{
+    width: 30px;
+    height: 30px;
+}
+
+.data-name, .data-email{
+    font-weight: 200;
+}
+
+.client-search{
+    display: flex;
+    flex-direction: column;
+}
+
+.client-input{
+    background-color: #101010;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.search-client-list{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.search-client-list:focus{
+    outline: none;
+}
+
+.search-icon{
+    width: 30px;
+    border-radius: 100%;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.search-icon-active{
+    width: 30px;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.client-search-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.opt-btn{
+    font-size: 12px;
+    background-color: #050505;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opt-btn.active{
+    background-color: white;
+    color: black;
+}
+
+.return-date{
+    background-color: transparent;
+}
+
+.list {
+    max-height: 460px;
+    overflow-y: auto;
+    transition: 0.3s;  
+}
+
+.list-reduced{
+    max-height: 430px;
+    overflow-y: auto; 
+    transition: 0.3s;   
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.vermelho{
+    background-color: rgb(78, 18, 18);
+}

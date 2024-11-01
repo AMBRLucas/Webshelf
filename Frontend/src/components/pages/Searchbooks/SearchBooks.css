@@ -1,0 +1,254 @@
+.dashboard{
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.dashboard-area{
+    background-color: #292524;
+    width: 85%;
+    height: 100%;
+    padding: 40px;
+    border-top-right-radius:  30px;
+    display: flex;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.5), 10px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.back-button{
+    background-color: #D0D0D0;
+    color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-button .back-arrow{
+    fill: black;
+    width: 30px;
+    height: 30px;
+}
+
+.back-button:hover .back-arrow{
+    fill: white;
+}
+
+.back-button:hover{
+    background-color: black;
+    color: white;
+}
+
+.book-search-area{
+    padding-left: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.libName span{
+    font-weight: 200;
+}
+
+.book-search-header{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.search-bar{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #101010;
+    border-radius: 20px;
+    border: solid 1px #101010;
+    padding-left: 15px;
+}
+
+.search-bar input{
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.gear-icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #101010;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.747),
+    0 0 1px rgba(255, 255, 255, 0.747),
+    0 0 1px rgba(255, 255, 255, 0.747),
+    0 0 1px rgba(255, 255, 255, 0.747),
+    0 0 1px rgba(255, 255, 255, 0.747); 
+    cursor: pointer;
+}
+.gear-icon-desactive{
+    width: 30px;
+    height: 30px;
+    fill: black;
+    background-color: white;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.book-table{
+    width: 100%;
+    height: 85%;
+    margin-top: 30px;
+}
+
+.table-header{
+    background-color: #101010;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-id, .header-name, .header-author, .header-genre{
+    flex: 1;
+    font-weight: 500;
+}
+
+.header-id, .header-name, .header-author{
+    border-right: 1px solid #ffffff;
+}
+
+.table-body{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.table-body-w-options{
+    width: 100%;
+    height: 88%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.item-id, .item-name, .item-author, .item-genre{
+    flex: 1;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.item-id, .item-name, .item-author{
+    border-right: 1px solid #ffffff;
+}
+
+.table-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #171717;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.unavailable{
+    background-color: rgb(78, 18, 18);
+}
+
+.table-item.unavailable:hover{
+    background-color: #160202;
+}
+
+.table-item:hover{
+    background-color: #090909;
+}
+
+.search-options{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-options button{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #101010;
+    border: 1px solid #101010;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-options button.active{
+    background-color: white;
+    border: white;
+    color: black;
+    font-weight: 600;
+}
+
+.client-options-desactive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.client-options-desactive:hover{
+    background-color: #292524;
+}
+
+.client-options-desactive .search-ico{
+    width: 25px;
+    fill: white;
+    transition: 0.4s;
+}
+
+.client-options .search-ico{
+    width: 25px;
+    fill: black;
+    transition: 0.4s;
+    transform: rotate(45deg);
+}
+
+.client-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
